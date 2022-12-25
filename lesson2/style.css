@@ -1,0 +1,66 @@
+:root {
+    --block-color-A: #ebc194;
+    --block-color-B: #c2d08b;
+    --block-color-C: #c2d08b;
+    --block-color-D: #fddd9b;
+    --block-color-D-1: #c3ffdb;
+    --block-color-D-2: #ffd2f0;
+    --block-color-E: #8bb6c0;
+    --border-color: #8080ff;
+    --border-radius: 10px;
+    font-size: 16px;
+}
+* {
+    margin: 0;
+    padding: 0;
+    border: 2px solid var(--border-color);
+}
+html {
+    padding: 1rem;
+    background: #aaa;
+    /* width: 100vw; */
+    /* height: 100vh; */
+    /* min-height: 100vh;
+    max-width: 1000vh; */
+    /* overflow-x: hidden;
+    overflow-y: hidden; */
+}
+body {
+    padding: 3rem;
+    background: #eee;
+}
+#innerBox {
+    /* 默认文档流 */
+    position: static;
+    position: relative;
+    top: 10rem;
+    margin: 5rem;
+    display: block;
+    /* width: 30rem; */
+    height: 10rem;
+    border-color: red;
+    border-radius: 5rem;
+    /* 左 上下 右 */
+    inset: 8rem 9rem 10rem;
+    
+
+}
+#outsideBox {
+    display: inline-block;
+    /* height: 30em; */
+    width: calc(50% + 20rem);
+    border-radius: 2rem;
+    background: var(--block-color-A);
+    background: linear-gradient( to right bottom,#fff1b8 40%, #a0d911 80%);
+    /* 只有中间的40%—80%是渐变色 */
+
+}
+#innerBox2 {
+    /* 默认文档流 */
+    position: static;
+    margin: 5rem;
+    display: block;
+    /* width: 30rem; */
+    height: 10rem;
+    border-color:green;
+    border-radius: 5rem;

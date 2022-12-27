@@ -1,0 +1,75 @@
+:root {
+    --block-color-A: #ebc194;
+    --block-color-B: #c2d08b;
+    --block-color-C: #1f91a8;
+    --block-color-D: #e49bfd;
+    --block-color-D-1: #c3ffdb;
+    --block-color-D-2: #ffd2f0;
+    --block-color-E: #8bb6c0;
+    --block-color-F:#8c8bc0;
+    --border-color: #80ff97;
+    --border-radius: 1rem;
+    font-size: 10px;
+}
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+html,
+body {
+    width: 100vw;
+    height: 100vh;
+}
+.subBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+#flex-1 {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+#flex-1 *:nth-child(1) {
+    background-color: var(--block-color-A);
+    width: 30%;
+    height: 5rem;
+}
+#flex-1 *:nth-child(2) {
+    background-color: var(--block-color-B);
+    width: 30%;
+    height: 5rem;
+}
+#flex-1 *:nth-child(3) {
+    background-color: var(--block-color-C);
+    width: 30%;
+    height: 5rem;
+}
+#flex-1 *:nth-child(4) {
+    background-color: var(--block-color-D);
+    width: 60%;
+    height: 5rem;
+    order: ;
+}
+#flex-1 *:nth-child(5) {
+    background-color: var(--block-color-E);
+    width: 30%;
+    height: 5rem;
+}
+#flex-1 *:nth-child(6) {
+    background-color: var(--block-color-F);
+    width: 30%;
+    height: 5rem;
+}

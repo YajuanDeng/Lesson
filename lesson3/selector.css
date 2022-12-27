@@ -1,0 +1,80 @@
+:root {
+    --block-color-A: #ebc194;
+    --block-color-B: #c2d08b;
+    --block-color-C: #1f91a8;
+    --block-color-D: #fddd9b;
+    --block-color-D-1: #c3ffdb;
+    --block-color-D-2: #ffd2f0;
+    --block-color-E: #8bb6c0;
+    --border-color: #8080ff;
+    --border-radius: 10px;
+    font-size: 16px;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+html,body {
+    background-color: #eee;
+
+
+}
+section {
+    display: flex;
+    /* display: none; 不存在*/ 
+    /* visibility: hidden;看不见 */ 
+    font-family: 'Courier New', Courier, monospace;
+}
+#section-1 nav {
+    color: var(--block-color-A);
+    
+    font-weight: 500;
+}
+#section-1 div#B {
+    color: var(--block-color-B);
+    font-weight: 700;
+}
+#section-1 main {
+    color: var(--block-color-C);
+    font-weight: 900;
+    font-style: italic;
+}
+#section-1 div#D {
+    color: var(--block-color-D);
+
+}
+
+#section-2 nav {
+    color: var(--block-color-C);
+    border: 2px solid;
+}
+/* #section-2>nav {
+    color: var(--block-color-A);
+    border: 2px solid;
+} */
+.btn {
+    font-size: 32px;
+    margin: 1rem 2rem;
+    border: 1px solid #333;
+    border-radius: 2rem;
+    padding: 1rem 2rem;
+    /* user-select: none; */
+    transition: all 0.5s ease-out;
+    position: relative;
+    top: 0rem;
+}
+.btn:hover {
+    color: #fff;
+    background: gray; 
+    position: relative;
+    top: -1rem ;
+}
+.btn:active {
+    border: 3px dashed #8080ff;
+}

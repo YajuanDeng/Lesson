@@ -1,0 +1,163 @@
+:root {
+    --red:#C42A09;
+    --orange:#fa8c16;
+    --gold:#faad14;
+    --lime:#a0d911;
+    --green:#52c41a;
+    --cyan:#13c2c2;
+    --blue:#1890ff;
+    --purple:#7221d1;
+    font-size: 10px;
+
+}
+*,
+*::before,
+*::after {
+    margin: o;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+@mixin border {
+    border: 0.2rem dashed var(--blue);
+}
+
+@mixin fontStyle {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 5rem;
+    color: white;
+}
+@mixin center {
+    display: grid;
+    place-items: center;
+}
+
+html,
+body {
+    width: 100vw;
+    height: 100vh;
+}
+section#page {
+    @include fontStyle;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--cyan);
+    height: 100%;
+    header {
+            display: flex;
+            height: 10rem;
+    
+            * {
+                @include center;
+                // width: 12rem;
+                @include border;
+                // flex 默认值
+                flex: 0 1 auto;
+                flex-grow: 1;
+                // flex:2;
+                // flex-basis:1rem; flex-grow:1;
+
+                //flex:12rem;
+                //flex-basis:1rem; flex-grow:1;
+                flex-basis: 12rem;
+                
+
+
+            }
+            .box-1 {
+                background: var(--orange);
+                flex-grow: 1;
+                flex-shrink: 1;
+            }
+    
+            :nth-child(2) {
+                background: var(--green);
+                flex-grow: 2;
+                flex-shrink: 2;
+            }
+
+            .box-3 {
+                background: var(--gold);
+                flex-grow: 3;
+                flex-shrink: 3;
+            }
+            .box-4 {
+                background: var(--green);
+                flex-grow: 4;
+                flex-shrink: 4;
+            }
+            .box-5 {
+                background: var(--red);
+                flex-grow: 5;
+                flex-shrink: 5;
+            }
+            
+            .box-6 {
+                background: var(--purple);
+                flex-grow: 6;
+                flex-shrink: 6;
+            }
+
+        }
+    main {
+        flex-grow: 1;
+        @include border();
+        display: flex;
+        > aside {
+            @include center;
+            @include border;
+            background-color: #a0d911;
+            flex-basis: 20rem;
+            flex-shrink: 0;
+            @media screen and (max-width:60rem) {
+                flex-basis: 15rem;
+                font-size: 4rem;
+            }
+            @media screen and (max-width:50rem) {
+                flex-basis: 12rem;
+                font-size: 3rem;
+            }
+
+
+        }
+        > div {
+            @include center;
+            @include border;
+            flex: 1;
+
+            > iframe {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        @media screen and (max-width:40rem) {
+            flex-direction: column;
+            >aside {
+                width: 100%;
+            }
+        }
+
+    }
+    footer {
+        display: flex;
+        @include border();
+
+        *{
+            @include center;
+            flex: 1;
+        }
+        :nth-child(1){
+            background-color: #fa8c16;
+        }
+        :nth-child(2) {
+            background-color: #7221d1;
+        }
+        :nth-child(3) {
+           background-color: var(--red);
+        }
+    }
+}
+
+

@@ -1,0 +1,153 @@
+@keyframes bounceIn {
+  from {
+      opacity: 0;
+      transform: scale(0.5);
+  }
+  to {
+      opacity: 1;
+      transform: scale(1);
+  }
+}
+
+@keyframes fillUp {
+  from {
+      transform: scaleX(0);
+  }
+  to {
+      transform: scaleX(1);
+  }
+}
+
+@keyframes picImage {
+  from {
+      opacity: 0;
+      transform: scale(1.2) translateY(-1rem);
+  }
+  to {
+      opacity: 1;
+      transform: scale(1) translateY(0);
+  }
+}
+
+@keyframes picShadow {
+  from {
+      opacity: 0;
+      transform: scale(1.2) translateY(4rem);
+  }
+  to {
+      opacity: 1;
+      transform: scale(1.1) translateY(0);
+  }
+}
+
+@keyframes slideDown {
+  from {
+      opacity: 0;
+      transform: translateY(-1rem);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  from {
+      opacity: 0;
+      transform: translateY(1rem);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+@keyframes zoomOut {
+  from {
+      opacity: 0;
+      transform: scale(1.05);
+  }
+  to {
+      opacity: 0.2;
+      transform: scale(1);
+  }
+}
+
+@keyframes zoomUp {
+  from {
+      opacity: 0.3;
+      transform: scale(1.05);
+  }
+  to {
+      opacity: 0.2;
+      transform: scale(1);
+  }
+}
+
+@keyframes zoomDown {
+  from {
+      opacity: 0.2;
+      transform: scale(1);
+  }
+  to {
+      opacity: 0.3;
+      transform: scale(1.05);
+  }
+}
+
+@keyframes pureRotation {
+  from {
+      transform: rotate(0deg);
+  }
+  to {
+      transform: rotate(360deg);
+  }
+}
+
+@keyframes rotation {
+  from {
+      transform: rotateX(-30deg) rotateZ(30deg) rotateY(20deg) translateX(0px)
+          translateY(20px) translateZ(-20px) rotate(0deg);
+  }
+  to {
+      transform: rotateX(-30deg) rotateZ(30deg) rotateY(20deg) translateX(0px)
+          translateY(20px) translateZ(-20px) rotate(360deg);
+  }
+}
+
+@keyframes picChange {
+  from {
+      transform: rotateX(0deg) rotateZ(0deg) rotateY(0deg) translateX(0px)
+          translateY(0px) translateZ(0px);
+      transition-duration: 0ms;
+  }
+  to {
+      transform: rotateX(-30deg) rotateZ(30deg) rotateY(20deg) translateX(0px)
+          translateY(20px) translateZ(-20px);
+      transition-duration: 500ms;
+  }
+}
+
+@keyframes picReturn {
+  from {
+      transform: rotateX(-30deg) rotateZ(30deg) rotateY(20deg) translateX(0px)
+          translateY(20px) translateZ(-20px);
+      transition-duration: 0ms;
+  }
+  to {
+      transform: rotateX(0deg) rotateZ(0deg) rotateY(0deg) translateX(0px)
+          translateY(0px) translateZ(0px);
+      transition-duration: 500ms;
+  }
+}
+
+@keyframes blickShow {
+  from {
+      background-color: rgba(255, 255, 255, 0);
+      box-shadow: none;
+  }
+  to {
+      background-color: rgba(255, 255, 255, 0.1);
+      box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.2);
+  }
+}

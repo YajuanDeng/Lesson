@@ -1,0 +1,14 @@
+{
+  "name": "Lesson7",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node ./script.js",
+    "dev": "nodemon ./script.js"
+  },
+  "devDependencies": {
+    "lodash": "^4.17.21",
+    "nodemon": "^2.0.20"
+  }
+}

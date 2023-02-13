@@ -50,7 +50,7 @@ body {
                 animation-name: fillUp;
                 animation-timing-function: cubic-bezier(0.76, 0.02, 0.43, 1.3);
                 
-                // 此处的&代表li 但是在li 层级用&代替，如果写成li的话可以放在l可以实现。
+                // 此处的&代表li 但是在li 层级用&代替，如果写成li的话可以放在ul可以实现。
                 &:nth-child(1) {
                     animation-delay: 100ms;
                 }

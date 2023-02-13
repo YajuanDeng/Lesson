@@ -39,11 +39,11 @@ header {
 ul {
   /* list-style: none; */
   /* list-style-type: square; */
-  list-style-image: url("./award-fill.svg");
+  /* list-style-image: url("./award-fill.svg"); */
 }
 
 ol {
-  list-style-image: url("./award-fill.svg");
+  list-style-image: url("./award-fill.svg"); 
 }
 
 li {

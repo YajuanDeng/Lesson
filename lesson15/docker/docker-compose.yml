@@ -1,0 +1,6 @@
+services:
+  nginx:
+    image: yajuandeng/vite_demo:0.0.1
+    restart: always
+    ports:
+      - "4567:80"

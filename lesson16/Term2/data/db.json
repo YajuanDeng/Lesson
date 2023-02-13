@@ -1,0 +1,22 @@
+{
+    "users": [
+        {
+            "id":1,
+            "name": "Claire",
+            "age": "35",
+            "hobby": "TV"
+        },
+        {
+            "id":2,
+            "name": "Lucas",
+            "age": "34",
+            "hobby": "sleeping"
+        },
+        {
+            "id":3,
+            "name": "Ella",
+            "age": "2",
+            "hobby":"drawing"
+        }
+    ]
+}

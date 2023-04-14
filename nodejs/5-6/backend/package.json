@@ -1,0 +1,25 @@
+{
+    "type": "module",
+    "license": "MIT",
+    "scripts": {
+        "js": "nodemon server.js",
+        "ts": "ts-node server.ts",
+        "db": "json-server --port 2345 --watch data.json"
+    },
+    "dependencies": {
+        "body-parser": "^1.20.2",
+        "commander": "^10.0.0",
+        "cors": "^2.8.5",
+        "express": "^4.18.2",
+        "ip": "^1.1.8",
+        "json-server": "^0.17.3",
+        "typescript": "^4.9.5"
+    },
+    "devDependencies": {
+        "@types/body-parser": "^1.19.2",
+        "@types/cors": "^2.8.13",
+        "@types/express": "^4.17.17",
+        "@types/ip": "^1.1.0",
+        "@types/node": "^18.14.5"
+    }
+}

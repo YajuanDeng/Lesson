@@ -1,0 +1,46 @@
+{
+  "user": [
+    {
+      "id": 1,
+      "name": "Raymond",
+      "age": "23"
+    },
+    {
+      "id": 2,
+      "name": "Emily",
+      "age": "33"
+    },
+    {
+      "id": 3,
+      "name": "Peter",
+      "age": "20"
+    },
+    {
+      "id": 4,
+      "name": "Amy",
+      "age": "26"
+    },
+    {
+      "id": 5,
+      "name": "Bob",
+      "age": "40"
+    }
+  ],
+  "auth": [
+    {
+      "id": 1,
+      "userID": 3,
+      "token": "sdafaerhvbjka9834ybvjasbd"
+    },
+    {
+      "id": 2,
+      "userID": 4,
+      "token": "izbekrbwkjfne709bvh98hhvh"
+    },
+    {
+      "id": 3,
+      "userID": 5,
+      "token": "izbekrbwkjfne709bvh98hhvh"
+    }
+  ]
+}

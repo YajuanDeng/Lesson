@@ -155,3 +155,84 @@ people3.walking()
 people3.cycling()
 /* 传统函数跟随调用的Object走，箭头函数跟随生成时object走 */
 }
+// 6
+{
+console.clear();
+  const user = {
+
+  }
+  function walking() {
+    console.log(this);
+  }
+  const cycling = () => {
+    console.log(this);
+  }
+  user.walking = walking
+  user.cycling = cycling
+  console.log(user);
+
+  walking()
+  user.walking()
+  cycling()
+  user.cycling()
+  
+}
+{
+  console.clear();
+  function start() {
+    console.log(this);
+  }
+  const stop = () => {
+    console.log(this);
+  }
+  class Users {
+    walking(){
+      console.log(this);
+      start()
+      stop()
+    }
+    cycling = () => {
+      console.log(this);
+      start()
+      stop()
+
+    }
+  }
+  const  user = new Users()
+  user.walking()
+  user.cycling()
+  
+}
+
+{
+  console.clear();
+  function start(a,b) {
+    console.log(this,a,b);
+  }
+  const stop = () =>{
+    console.log(this);
+  }
+
+  class Users {
+    walking = function() {
+      start()
+      start.bind(this)(1, 2)
+      start.bind({"name":"deng"})(7,8)
+      // 只能绑定一次
+      start.call(this, 3, 4)
+      start.apply(this,[5,6])
+    }
+    cycling = () => {
+      console.log(this);
+      
+    }
+  }
+
+  const user = new Users()
+  user.walking()
+
+  user.cycling()
+
+  // setTimeout()
+
+}

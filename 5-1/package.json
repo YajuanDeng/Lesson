@@ -1,0 +1,10 @@
+{
+  "type": "module",
+  "scripts": {
+    "start":"nodemon script.js"
+
+  },
+  "dependencies": {
+    "nodemon": "^2.0.22"
+  }
+}

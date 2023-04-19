@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <title>React Start 6</title>
+</head>
+<body>
+    <div id="root"></div>
+    <script type="text/babel">
+        const rootElement = document.getElementById('root')
+        const root = ReactDOM.createRoot(rootElement)
+
+        const message = props => <span {...props}></span>
+        const style = {display:"flex", flexDirection:"column"}
+
+        let element = <div className= "container" style={style}>
+        {message({children:"Hello World"})}   
+        {message({children:"Simple Mode",style:{color:"red"}})} 
+        </div>
+
+        const ErrorMessage = props => <span style={{color:"red"}} {...props}></span>
+
+        element = <div className="container" style={style}>
+            <ErrorMessage>Hello World</ErrorMessage>
+            <ErrorMessage style = { {color:"blue"}}>Simple Mode</ErrorMessage>
+        </div>
+
+
+        root.render(element)
+
+
+
+
+    </script>
+</body>
+</html>

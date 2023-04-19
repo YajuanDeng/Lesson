@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <title>React Start 4</title>
+</head>
+<body>
+    <div id="root"></div>
+    <script type="text/babel">
+        const rootElement = document.getElementById('root')
+        
+        const root = ReactDOM.createRoot(rootElement)
+
+        const style = {display:'flex',flexDirection:'column'}
+
+        const title = <span>Hello World</span>
+        const content = <span>Simple Mode</span>
+
+        const element = <div 
+        className = "container" 
+        id="Demo4"
+        style={style}
+        >  
+        {title}
+        {content}    
+        </div>
+
+        root.render(element)
+
+
+
+    </script>
+</body>
+</html>

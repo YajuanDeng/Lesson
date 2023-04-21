@@ -1,0 +1,32 @@
+.App {
+  text-align: center;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.task {
+  display: flex;
+  margin: 15px;
+  align-items: center;
+  justify-content: center;
+}
+
+.task button:nth-child(2) {
+  width: 70px;
+  height: 20px;
+  margin-left: 20px;
+  text-align: center;
+
+}
+
+.task button:nth-child(3) {
+  width: 25px;
+  height: 20px;
+  margin-left: 20px;
+  text-align: center;
+
+}
